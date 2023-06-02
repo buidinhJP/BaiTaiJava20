@@ -42,10 +42,9 @@ public class Btvn03 {
 
         int days = totalSeconds / 86400;
         int years = days / 365;
+        int remainingDays = days % 365;
 
-        String result = String.format("%d ngày, %d năm", days, years);
-
-        System.out.println("Kết quả: " + result);
+        System.out.println("Kết quả: " + remainingDays + " ngày, " + years + " năm.");
 
     }
 }
