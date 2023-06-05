@@ -4,7 +4,7 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class BTVN03 {
-    public static void main(String[] args) {Bai5();}
+    public static void main(String[] args) {}
     public static void Bai1() {
         for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
@@ -108,4 +108,5 @@ public class BTVN03 {
         } while (SoND > 0);
         System.out.println("So da dao nguoc: " + SoDaoNguoc);
     }
+
 }
