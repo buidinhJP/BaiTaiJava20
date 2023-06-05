@@ -108,5 +108,23 @@ public class BTVN03 {
         } while (SoND > 0);
         System.out.println("So da dao nguoc: " + SoDaoNguoc);
     }
+    public static void Bai6() {
+        String str = "test string";
+        char mostFrequentChar = ' ';
+        int [] charCount = new int[256];
+        for (int i = 0; i <str.length(); i++) {
+            char c = str.charAt(i);
+            charCount[c]++;
+        }
+        int maxCount = 0;
+        for (int i = 0; i < charCount.length; i++) {
+            if (charCount[i] > maxCount) {
+                maxCount = charCount[i];
+                mostFrequentChar = (char) i;
+            }
+        }
+        System.out.println(mostFrequentChar);
+
+    }
 
 }
