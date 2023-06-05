@@ -14,8 +14,15 @@ public class BaiThucHanh04 {
 //    VD: [1,4,7,6,2,3] -> [1,5,7,7,3,3]
 
     public static void Bai1() {
-        int[] arr = {1, 4, 7, 6, 2, 3};
-        System.out.println("Mảng ban đầu:");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập số so phần tử cua mang");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Nhap cac phan tu cua mang: ");
+        for (int i = 0; i < n; i++) {
+            System.out.println("Phan tu thu" + (i + 1) + ": ");
+            arr[i] = scanner.nextInt();
+        }
         printArray(arr);
 
         for (int i = 0; i < arr.length; i++) {
