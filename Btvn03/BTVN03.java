@@ -1,6 +1,5 @@
-package Btvn03;
+package BTVN.Btvn03;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class BTVN03 {

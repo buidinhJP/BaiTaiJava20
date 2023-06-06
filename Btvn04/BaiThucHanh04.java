@@ -1,7 +1,6 @@
-package Btvn03;
+package BTVN.Btvn04;
 
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class BaiThucHanh04 {
     public static void main(String[] args) {
