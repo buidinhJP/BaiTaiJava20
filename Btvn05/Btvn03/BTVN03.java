@@ -3,23 +3,19 @@ package BTVN.Btvn03;
 import java.util.Scanner;
 
 public class BTVN03 {
-    public static void main(String[] args) {Bai2();}
+    public static void main(String[] args) {}
     public static void Bai1() {
-
-//        for (int i = 1; i <= 100; i++) {
-//            if (i % 5 == 0) {
-//                System.out.println("Buzz");
-//                if (i % 3 == 0) {
-//                    System.out.println("Fizz");
-//                }else {
-//                    System.out.println("Buzz");
-//                }
-//            }else if (i % 3 == 0){
-//                System.out.println("Fizz");
-//            }else {
-//                System.out.println(i);
-//            }
-//        }
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
     }
     public static void Bai2() {
 //        Viết chương trình Java để tìm ký tự xuất hiện nhiều nhất trong một chuỗi

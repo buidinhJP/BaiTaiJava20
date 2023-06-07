@@ -128,13 +128,11 @@ public class Btvn04 {
         System.out.print("Nhap so nguyen m = ");
         int m = scanner1.nextInt();
 
-//        char[][] rectangle = new char[n][m];
+        char[][] rectangle = new char[n][m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-//                rectangle[i][j] = '*';
-//                System.out.print(rectangle[i][j] + " ");
-//            }
-                System.out.print("* ");
+                rectangle[i][j] = '*';
+                System.out.print(rectangle[i][j] + " ");
             }
             System.out.println();
         }
