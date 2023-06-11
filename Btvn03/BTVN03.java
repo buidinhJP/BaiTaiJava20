@@ -3,7 +3,7 @@ package BTVN.Btvn03;
 import java.util.Scanner;
 
 public class BTVN03 {
-    public static void main(String[] args) {Bai2();}
+    public static void main(String[] args) {Bai4();}
     public static void Bai1() {
 
 //        for (int i = 1; i <= 100; i++) {
@@ -72,13 +72,20 @@ public class BTVN03 {
 //            *           *
 //            *           *
 //            *  *  *  *  *
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 4; j++) {
-                if (i == 0 || i == 4 || j == 0 || j == 3) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhap vao hang = ");
+        int n = scanner.nextInt();
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Nhap vao cot = ");
+        int m = scanner2.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j--) {
+//                if (i == 0 || i == n-1 || j == 0 || j == m-1) {
                     System.out.print("* ");
-                }else {
-                    System.out.print("  ");
-                }
+//                } else {
+//                    System.out.print("  ");
+//                }
             }
             System.out.println();
         }

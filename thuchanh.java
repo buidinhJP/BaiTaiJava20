@@ -20,8 +20,33 @@ public class thuchanh {
 //            my_array[i] = my_newArray[i];
 //        }
 
+        for (int i = 0; i < 6; i++) {
+            int n = 5;
+
+            for (int j = 0; j < n-i-1; j++) {
+                System.out.print(" ");
+            }
+            int s = 1;
+
+            for (int j = 0; j < i; j++) {
+                System.out.print(" " +s);
+
+                s = s * (i - j) / (j + 1);
+            }
+            System.out.println();
+        }
+//            for (int a = 1; a <= 6; a++) {
+//
+//                for (int b = 12; b >= 6; b--) {
+//                    System.out.print("*");
+//                }
+//
+//                for (int c = 1; c <= a; c++) {
+//                    System.out.print("0");
+//                }
+//                System.out.println();
+//            }
 
 
-
+        }
     }
-}

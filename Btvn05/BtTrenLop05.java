@@ -14,9 +14,9 @@ public class BtTrenLop05 {
 //        123
 //        1234
 //        12345
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập số n = ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++){
                 System.out.print(j + " ");
@@ -83,6 +83,7 @@ public class BtTrenLop05 {
             System.out.println();
         }
     }
+
     public static void Bai5() {
 //    Viết chương trình In ra Tam giác pascal như sau:
 //            1
@@ -94,14 +95,32 @@ public class BtTrenLop05 {
         System.out.print("Nhập số n = ");
         int n = sc.nextInt();
 
+
         for (int i = 0; i < n; i++) {
             int k = 1;
+
+            for (int j = 0; j < n-i-1; j++) {
+                System.out.print(" ");
+            }
                 for ( int j = 0; j <= i; j++) {
                     System.out.print(k + " ");
                     k = k * (i - j) / (j + 1);
                 }
                 System.out.println();
             }
+//        int n = 5;
+//        for (int i =0; i < n; i++)
+//        {
+//            int s = 1;
+//            for (int j = 0; j < n - i - 1; j++){
+//                System.out.println(" ");
+//            }
+//            for (int j = 0; j < i; j++){
+//                System.out.println(" "+s);
+//                s = s * (i - j )/ (j + 1);
+//            }
+//            System.out.println();
+//        }
 //
     }
 
